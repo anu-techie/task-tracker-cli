@@ -25,14 +25,13 @@ Follow these steps to get your Task Tracker CLI up and running:
    - To download - as a ZIP, click the **Code** button and select **Download ZIP**.  
    - Or clone via Git (if you have Git installed):  
      ```bash
-     git clone <repository-url>
+     git clone https://github.com/anu-techie/task-tracker-cli.git
      ```
-   Replace `<repository-url>` with your actual GitHub repository link.
 
 2. **Navigate to the project directory**
 
    ```bash
-   cd <project-folder>
+   cd task-cli.py
    ```
 3. **Ensure you have Python 3 installed**
 
@@ -62,4 +61,5 @@ This project was inspired by and developed following the excellent guidance from
 ## Project URL
 
 For detailed project guidelines and ideas, visit:
+
 [https://roadmap.sh/projects/task-tracker](https://roadmap.sh/projects/task-tracker)
