@@ -43,7 +43,7 @@ Follow these steps to get your Task Tracker CLI up and running:
 
 4. **Run the Task Tracker CLI**
     ```bash
-    python task_cli.py help
+    python task-cli.py help
     ```
     to see available commands and usage instructions.
 ---
