@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "description": "'frond-end projects'",
+        "status": "done",
+        "createdAt": "2025-06-03 10:37:03",
+        "updatedAt": "2025-06-03 10:37:56"
+    },
+    {
+        "id": 2,
+        "description": "'back-end projects'",
+        "status": "in-progress",
+        "createdAt": "2025-06-03 10:37:15",
+        "updatedAt": "2025-06-03 10:38:09"
+    },
+    {
+        "id": 3,
+        "description": "'final project'",
+        "status": "todo",
+        "createdAt": "2025-06-03 10:37:34",
+        "updatedAt": "2025-06-03 10:37:34"
+    }
+]
