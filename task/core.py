@@ -1,28 +1,4 @@
-'''Task CLI Application'''
-# native file system module to interact with the JSON file.
-import os
-import sys
-import json
-from datetime import datetime
-
-task_file = 'tasks.json'
-
-def load_task():
-    if not os.path.exists(task_file):
-        return []
-    with open(task_file, 'r') as file:
-        return json.load(file)
-    
-def save_task(tasks):
-    # JSON file will be created automatically if it does not exist.
-    with open(task_file, 'w') as file:
-        json.dump(tasks, file, indent=4)
-
-def get_current_time():
-    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-def get_new_id(tasks):
-    return max([t['id'] for t in tasks], default=0)+1
+from .utils import (load_task, save_task, get_current_time, get_new_id)
 
 def add_task(description):
     tasks = load_task()
@@ -80,7 +56,6 @@ def list_tasks(status=None):
     for task in filter_task:
         print(f'{task['id']}. {task['description']} | {task['status']} | {task['createdAt']} | {task['updatedAt']}')
     
-
 def print_help():
     print("""
 📝 Task CLI - Command Line To-Do App
@@ -110,41 +85,3 @@ Available Commands:
       Example: python task_cli.py list
                python task_cli.py list done
 """)
-
-# CLI Structure
-def main():
-    if len(sys.argv) < 2:
-        print("Please enter a command or type 'python <filename.py> help' to see available commands.")
-        return
-    # positional arguments sys.argv[]
-    command = sys.argv[1]
-
-    if command == 'help':
-        print_help()
-    
-    elif command == 'add':
-        description = ' '.join(sys.argv[2:])
-        add_task(description)
-
-    elif command =='update':
-        id = int(sys.argv[2])
-        description = ' '.join(sys.argv[3:])
-        update_task(id, description)
-
-    elif command == 'delete':
-        delete_task(int(sys.argv[2]))
-
-    elif command == 'status':
-        change_status(int(sys.argv[2]), sys.argv[3])
-
-    elif command == 'list':
-        if len(sys.argv)==3:
-            list_tasks(sys.argv[2])
-        else:
-            list_tasks()
-    else:
-        print('Unknown command')
-        print("wanna help then type 'python <filename.py> help' to see available commands.")
-    
-if __name__ == "__main__":
-     main()

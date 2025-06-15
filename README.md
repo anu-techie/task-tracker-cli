@@ -49,7 +49,7 @@ Follow these steps to get your Task Tracker CLI up and running:
 ---
 
 ## Data Storage
-Tasks are saved in tasks.json located in the same directory as the script. This file is created automatically when you add your first task.
+Tasks are saved in tasks.json located in the data directory as the script. This file and folder is created automatically when you add your first task.
 
 ---
 
