@@ -1,7 +1,11 @@
 # Task Tracker CLI App
 
-A simple command-line task management tool built in Python.  
-Manage your to-do list right from your terminal — add, update, delete, change status, and list tasks!
+[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue?logo=python)](https://www.python.org/)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc/4.0/)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
+>A simple command-line task management tool built in Python.  
+>Manage your to-do list right from your terminal — add, update, delete, change status, and list tasks!
 
 ---
 
@@ -12,7 +16,7 @@ Manage your to-do list right from your terminal — add, update, delete, change 
 - Delete tasks by ID  
 - Change task status (`todo`, `in-progress`, `done`)  
 - List all tasks or filter by status  
-- Tasks saved persistently in a JSON file (`tasks.json`)  
+- Tasks saved persistently in a JSON file (`tasks.json`)
 
 ---
 
@@ -31,7 +35,7 @@ Follow these steps to get your Task Tracker CLI up and running:
 2. **Navigate to the project directory**
 
    ```bash
-   cd task-cli.py
+   cd task-tracker-cli
    ```
 3. **Ensure you have Python 3 installed**
 
@@ -42,7 +46,7 @@ Follow these steps to get your Task Tracker CLI up and running:
 
 4. **Run the Task Tracker CLI**
     ```bash
-    python task-cli.py help
+    python cli.py help
     ```
     to see available commands and usage instructions.
 ---
@@ -63,3 +67,14 @@ This project was inspired by and developed following the excellent guidance from
 For detailed project guidelines and ideas, visit:
 
 [https://roadmap.sh/projects/task-tracker](https://roadmap.sh/projects/task-tracker)
+
+---
+
+## License
+
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).  
+You can view the full license [here](https://creativecommons.org/licenses/by-nc/4.0/).
+
+---
+
+🙋‍♀️ Author : Anusuyadevi |   Learning Backend building cool projects ❤️
